@@ -15,7 +15,14 @@
 
 
 
-    <div id="app"></div>
+    <div id="app">
+        <div class="emails">
+            <ul v-if="displayOk">
+                <li v-for="email in emails">{{email}}</li>
+            </ul>
+            <h1 v-else>Generating emails...</h1>
+        </div>
+    </div>
 
 
 
